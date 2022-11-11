@@ -1,0 +1,28 @@
+Scanner in = new Scanner(System.in);
+      String texto1 = "De quantos numeros vc quer tirar o mmc?";
+      String texto2 = "Quais numeros vc quer que tire o mmc?";
+      int quant=0;
+      int[] num = new int[quant]; 
+        System.out.println(texto1);
+        quant=in.nextInt();
+        for(int i =0;i<quant;i++){
+        System.out.println(texto2);
+        num[i]=in.nextInt();
+    }
+   
+
+    while (tudo1(num) == true){
+        
+    }
+    
+
+
+   public static int proxPrimo(int primo){
+        boolean prim=prim(primo);
+        int proxPrimo = 0;
+        while (!prim){
+          proxPrimo = primo + 1;
+        }
+
+        return proxPrimo;
+   }
